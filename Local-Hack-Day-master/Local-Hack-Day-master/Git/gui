@@ -1,0 +1,90 @@
+#!/usr/bin/env python
+# -*- coding: utf-8 -*-
+
+from tkinter import *
+
+fenetre = Tk()
+fenetre.title("GUI")
+fenetre.resizable(width=False, height=False)
+
+label = Label(fenetre, text="Hello World")
+label.pack()
+
+
+def listeElement1(event):
+    isShowing = False
+    listeEl1 = Listbox(fenetre)
+    liste.pack(side=RIGHT, padx=5, pady=5)
+    if isShowing == False :
+        liste.insert(1, "DATA1")
+        liste.insert(2, "DATA2")
+        isShowing = True
+    else :
+        liste.remove(1, "DATA1")
+        liste.remove(2, "DATA2")
+        isShowing = False
+
+# liste
+
+liste = Listbox(fenetre)
+liste.pack(side=RIGHT, padx=5, pady=5)
+
+society1 = StringVar()
+society2 = StringVar()
+society3 = StringVar()
+society4 = StringVar()
+society5 = StringVar()
+society6 = StringVar()
+society7 = StringVar()
+society8 = StringVar()
+society9 = StringVar()
+society10 = StringVar()
+society11= StringVar()
+society12= StringVar()
+society13= StringVar()
+
+liste.insert(1, society1)
+liste.insert(2, society2)
+liste.insert(3, society3)
+liste.insert(4, society4)
+liste.insert(5, society5)
+liste.insert(6, society6)
+liste.insert(7, society7)
+liste.insert(8, society8)
+liste.insert(9, society9)
+liste.insert(10, society10)
+liste.insert(11, society11)
+liste.insert(12, society12)
+liste.insert(13, society13)
+
+liste.bind('<Button-1>', listeElement1)
+
+
+liste.pack()
+
+# checkbutton
+bouton = Checkbutton(fenetre, text="Tech")
+bouton.pack(padx=5, pady=5)
+
+bouton1 = Checkbutton(fenetre, text="Production")
+bouton1.pack(padx=5, pady=5)
+
+bouton2 = Checkbutton(fenetre, text="Financial")
+bouton2.pack(padx=5, pady=5)
+
+bouton3 = Checkbutton(fenetre, text="Real estate")
+bouton3.pack(padx=5, pady=5)
+
+bouton4 = Checkbutton(fenetre, text="Retail")
+bouton4.pack(padx=5, pady=5)
+
+bouton5 = Checkbutton(fenetre, text="Services")
+bouton5.pack(padx=5, pady=5)
+
+
+# bouton de sortie
+
+bouton=Button(fenetre, text="Fermer", command=fenetre.quit)
+bouton.pack(side=BOTTOM)
+
+fenetre.mainloop()
