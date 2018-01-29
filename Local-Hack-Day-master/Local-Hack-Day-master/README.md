@@ -1,2 +1,0 @@
-# Local-Hack-Day
-Hi
