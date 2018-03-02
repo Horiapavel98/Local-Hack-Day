@@ -15,7 +15,7 @@ for information.
   In this image below, the normal state of the application can be seen after a user
   has clicked the 'Plot' button.
 
-/img
+(https://github.com/Horiapavel98/Local-Hack-Day/images/FinAhead_present.png)
 
   Another use case of our application is the 'Show Volatility' button that outputs
   the volatility of the stock market prices of the selected company, its name, the stock
