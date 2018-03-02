@@ -184,9 +184,7 @@ def plot_graph(column, dict):
     for ini in range(0,len(val_lst)-1):
         date += dt.timedelta(days = 1)
         date_lst.append(date)
-    #result = [date_lst,val_lst,code_to_name[column_code]]
-    #return result
-    #print (date_lst)
+
     plt.plot(date_lst, val_lst, "b-")
     blue_patch = mp.Patch(color = "blue", label = dict.code_to_name[column.code])
     plt.legend(handles = [blue_patch])
@@ -222,42 +220,3 @@ def mean_volatility(columns):
         return result
     else: return None
 #MAIN ______________________________________________________________________________________________________________
-#for x in range(0, 90):
-#    lst = []
-#    calculate_list(x,lst)
-#    np_lst= np.array(lst)
-#    print("Nr:" + str(x))
-#    display_diff(np_lst)
-
-#test.create_stuff()
-#test = Dictionaries(r"C:\Users\Anton Luca-Dorin\My Files\KINGS\Hackathons\Local Hack Day\Local-Hack-Day-master\Git\codes.txt")
-
-#table = Table(r"C:\Users\Anton Luca-Dorin\My Files\KINGS\Hackathons\Local Hack Day\Local-Hack-Day-master\Git\prices.csv")
-#lst = []
-
-#for i in range(0,90):
-#    col = Column(test.index_to_code[i],test,table)
-#    print(col.lst)
-#    print()
-#    lst.append(col)
-
-#query = mean_volatility(lst)
-
-#query.print_all()
-
-
-
-#plot_graph(objCol, test)
-
-# print(aux)
-#print()
-#print(code_to_name)
-#print()
-#print(name_to_code)
-#print()
-#print(code_to_sector)
-#print()
-#print(code_to_index)
-#print()
-#print(plot_graph("MSFT"))
-#print(mean_volatility(["MSFT","T","FB","ORCL","CSCO","NVDA","MCRO.L"]))

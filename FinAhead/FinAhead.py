@@ -2,11 +2,11 @@ from tkinter import *
 import v4
 
 #___DICTIONARIES_CREATED____
-test = v4.Dictionaries(r"C:\Users\horia\Desktop\Local-Hack-Day\Local-Hack-Day-master\codes.txt")
+test = v4.Dictionaries(r"C:\Users\horia\Desktop\My data\Scoala\Hackthons\Local Hack Day\FinAhead\codes.txt")
 test.create_stuff()
 
 #____TABLE_FOR_READING_THE_DATA_CREATED______
-table = v4.Table(r"C:\Users\horia\Desktop\Local-Hack-Day\Local-Hack-Day-master\prices.csv")
+table = v4.Table(r"C:\Users\horia\Desktop\My data\Scoala\Hackthons\Local Hack Day\FinAhead\prices.csv")
 
 #____ORGANIZING_ALL_COLUMNS_IN_A_SINGLE_LIST_____
 
@@ -23,6 +23,7 @@ for col in lst_col:
 OPTIONS = lst_names
 #______GUI_INTERFACE____________________________________________________________________________
 master = Tk("FinAhead")
+master.title("FinAhead")
 
 variable = StringVar(master)
 variable.set(OPTIONS[0]) # default value
