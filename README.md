@@ -20,10 +20,9 @@ for information.
 ![alt text](https://github.com/Horiapavel98/Local-Hack-Day/blob/master/images/FinAhead_present.png)
 
 
-
-  Another use case of our application is the 'Show Volatility' button that outputs
-  the volatility of the stock market prices of the selected company, its name, the stock
-  exchange code for that company and the domain of that company (TECH/FIN/RETAIL).
+Another use case of our application is the 'Show Volatility' button that outputs
+the volatility of the stock market prices of the selected company, its name, the stock
+exchange code for that company and the domain of that company (TECH/FIN/RETAIL).
   
   
   
